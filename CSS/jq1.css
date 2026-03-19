@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    bottom: 0;
+    text-decoration: none;
+}
+
+p h1 {
+    text-align:center;
+}
+
+.top-img {
+    width: 100%;
+    height: 500px;
+    box-shadow: 20px 30px 20px rgba(0,0,0,0.25);
+}
+
+    .top-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+/*内容1*/
+.content-1 {
+    width: 100%;
+    padding-top: 80px;
+}
+
+.text {
+    margin: 0 auto;
+    width: 1200px;
+    height: 50px;
+    text-align: center;
+    color:black;
+    font-size: 30px;
+}
+
+.content-1-1, .content-1-2, .content-1-3 {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    width: 1200px;
+    height: 440px;
+}
+
+.content-1-4 {
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    height: 300px;
+}
+
+.content-1-1-left {
+    width: 410px;
+    height: 440px;
+}
+
+.content-1-1-right {
+    width: 790px;
+    height: 440px;
+}
+
+.text-1 {
+    margin: 60px 55px;
+    color: white;
+}
+
+.h1 {
+    width: 100%;
+    height: 36px;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.p {
+    margin-top: 30px;
+    width: 100%;
+    font-size: 17px;
+    text-indent: 2em;
+    letter-spacing: 2px;
+    line-height:1.5;
+}
+
+.title {
+    margin-top: 35px;
+    width: 100%;
+    height: 32px;
+    font-size: 18px;
+}
+
+.fr {
+    width: 100%;
+    height: 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*内容1*/
+
+.content1{
+    margin:0 auto;
+}
+.text1 {
+    width: 500px;
+    height: 150px;
+    margin: 0 auto;
+}
+.line {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 5px;
+    border-bottom: 3px solid rgb(170, 77, 61);
+}
+
+.container {
+    margin:0 auto;
+    width:1200px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    position:relative ;
+    width :240px;
+    height :300px;
+    overflow:hidden;
+    margin :15px;
+    /*视距*/
+    perspective :600px;
+}
+.imgs {
+    /*绝对定位*/
+    position: absolute;
+    /*设置旋转的基点为右边*/
+    transform-origin: right;
+    /*图片默认沿Y轴旋转0度，不透明度为0*/
+    transform: rotateY(0deg);
+    opacity: 1;
+    /*过渡*/
+    transition: 0.5s;
+}
+    .imgs img {
+        max-height:100%;
+        max-width:100%;
+        object-fit: cover;
+    }
+.caption {
+    position: absolute;
+    z-index: 0;
+    background-color: #597b7a;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    /*元素高度和宽度包含内边距和边框*/
+    box-sizing: border-box;
+    /*弹性布局 垂直排列 垂直居中*/
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*设置旋转的基点为左边*/
+    transform-origin: left;
+    /*文字默认沿Y轴旋转90度，不透明度为0*/
+    transform: rotateY(90deg);
+    opacity: 0;
+    /*过渡*/
+    transition: 0.5s;
+}
+
+.item:hover .imgs{
+    transform :rotateY(-90deg);
+    opacity :0;
+}
+.item:hover .caption{
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+.caption h3{
+    font-size :22px;
+    margin-bottom :15px;
+}
+.caption p{
+    font-size :14px;
+}
+
+
+
+
+
+
+
+

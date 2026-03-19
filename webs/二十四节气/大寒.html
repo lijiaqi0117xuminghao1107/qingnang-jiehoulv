@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>岁末余寒，春信渐近</title>
+    <link rel="stylesheet" type="text/css" href="../../CSS/header.css" />
+    <link rel="stylesheet" type="text/css" href="../../CSS/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../../CSS/24.css" />
+    <style>
+        body {
+            background-image: url("pic/冬.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .section p {
+            color: rgb(123, 161, 168);
+        }
+
+        .section h2 {
+            color: rgb(101, 138, 152);
+        }
+
+        .section h3 {
+            color: rgb(101, 138, 152);
+        }
+
+        .top-img {
+            width: 100%;
+            height: 700px;
+            box-shadow: 20px 30px 20px rgba(0,0,0,0.25);
+        }
+
+            .top-img img {
+                width: 100%;
+                height: 100%;
+            }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div class="nav-container">
+                <input type="checkbox" name="" id="check" />
+                <div class="logo-container">
+                    <h3 class="logo">青囊节候录</h3>
+                </div>
+
+                <div class="nav-btn">
+                    <div class="nav-links">
+                        <ul>
+                            <li class="nav-link" style="--i: .6s">
+                                <a href="../index.html">主页</a>
+                            </li>
+                            <li class="nav-link" style="--i: .85s">
+                                <a href="../二十四节气总览.html">节气</a>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li class="dropdown-link">
+                                            <a href="#">春</a>
+                                            <div class="dropdown second">
+                                                <ul>
+                                                    <li class="dropdown-link">
+                                                        <a href="立春.html">立春</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="雨水.html">雨水</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="惊蛰.html">惊蛰</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="春分.html">春分</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="清明.html">清明</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="谷雨.html">谷雨</a>
+                                                    </li>
+                                                    <div class="arrow"></div>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown-link">
+                                            <a href="#">夏</a>
+                                            <div class="dropdown second">
+                                                <ul>
+                                                    <li class="dropdown-link">
+                                                        <a href="立夏.html">立夏</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="小满.html">小满</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="芒种.html">芒种</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="夏至.html">夏至</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="小暑.html">小暑</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="大暑.html">大暑</a>
+                                                    </li>
+                                                    <div class="arrow"></div>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown-link">
+                                            <a href="#">秋</a>
+                                            <div class="dropdown second">
+                                                <ul>
+                                                    <li class="dropdown-link">
+                                                        <a href="立秋.html">立秋</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="处暑.html">处暑</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="白露.html">白露</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="秋分.html">秋分</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="寒露.html">寒露</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="霜降.html">霜降</a>
+                                                    </li>
+                                                    <div class="arrow"></div>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown-link">
+                                            <a href="#">冬</a>
+                                            <div class="dropdown second">
+                                                <ul>
+                                                    <li class="dropdown-link">
+                                                        <a href="立冬.html">立冬</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="小雪.html">小雪</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="大雪.html">大雪</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="冬至.html">冬至</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="小寒.html">小寒</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="大寒.html">大寒</a>
+                                                    </li>
+                                                    <div class="arrow"></div>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <div class="arrow"></div>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-link" style="--i: 1.1s">
+                                <a href="../养生.html">养生</a>
+
+                            </li>
+                            <li class="nav-link" style="--i: 1.35s">
+                                <a href="../科普.html">科普</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="hamburger-menu-container">
+                    <div class="hamburger-menu">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="overlay"></div>
+            </section>
+        </main>
+        <div class="frame">
+            <div class="top-img">
+                <img src="pic/top/dh.jpg" />
+            </div>
+            <div class="content">
+                <div class="nr">
+                    <!-- 节气介绍 -->
+                    <div class="section">
+                        <h2>节气介绍</h2>
+                        <p>大寒，作为二十四节气中的终章，在每年公历 1 月 20 日前后，当太阳黄经抵达 300° 时准时登场。古籍《授时通考・天时》引《三礼义宗》阐述道，“寒气之逆极，故谓大寒”，直白点明此时寒气已至巅峰状态。大寒的降临，宣告着冬季步入尾声，同时也预示着新一年的节气轮回即将开启。</p>
+                        <p>步入大寒，天地间满是冷峻景象。北方地区被冰雪全面覆盖，广袤大地一片银白，连绵山峦恰似蜿蜒起伏的玉龙，静静蛰伏。河流冰封，往日奔腾的河水化作坚固冰层，成为天然溜冰场，冰面在阳光映照下，闪烁着清冷而耀眼的光。树木裹上晶莹剔透的冰挂，宛如琼枝玉树，微风拂过，冰挂相互撞击，发出清脆悦耳的声响，为寂静冬日增添别样韵律。在南方，虽不见北方那般磅礴雪景，但湿冷的空气无孔不入，寒意直沁骨髓。连绵细雨飘落，打湿了大街小巷，街头巷尾的树木在寒风中瑟瑟发抖，枝头残留的黄叶也摇摇欲坠，尽显冬日萧索。</p>
+                        <p>古人依据长期对自然的观察，将大寒细致划分成三候：“一候鸡始乳；二候征鸟厉疾；三候水泽腹坚” 。初候时，随着日照渐增，阳气微微萌动，母鸡感受到春的气息，开始孕育新生命，准备孵化小鸡，这是生命在寒冬中不屈的延续；五日之后，进入二候，鹰隼这类猛禽，为抵御严寒，捕食愈发迅猛凌厉，它们翱翔于天际，目光如炬，不放过任何猎物，以获取充足能量；再五日，三候至，水域中的冰层愈发厚实坚固，从岸边一直延展至中央，连河底都被冻结，整个冰面仿佛一面巨大的镜子，倒映着天空的湛蓝与冬日的清冷。与此同时，大寒时节，瑞香、兰花、山矾依序绽放。瑞香花小巧玲珑，香气馥郁，给寒冷的冬日带来丝丝甜香；兰花清幽淡雅，于石缝、山林间悄然舒展身姿，尽显高洁气质；山矾花洁白素雅，星星点点散布枝头，为冬日添上一抹纯净色彩。</p>
+                        <p>我国疆域辽阔，大寒时节，各地景致截然不同。东北的哈尔滨，一年一度的冰雪节盛大开启，造型各异的冰雕、雪雕惊艳亮相，晶莹璀璨，宛如童话世界，吸引无数游客前来观赏；而在海南，阳光依旧炽热，沙滩上满是身着轻薄衣物的游客，他们悠然享受着温暖阳光与轻柔海风，与冰天雪地的北方形成鲜明对比。</p>
+                    </div>
+
+                    <!-- 养生介绍 -->
+                    <div class="section">
+                        <h2>养生介绍</h2>
+                        <p>大寒时节，天寒地冻，人体阳气内藏，养生需顺应天时，注重保暖防寒、滋阴补阳、益肾固精，维持身体阴阳平衡，增强抵抗力，安然度寒冬。</p>
+                        <p>中医认为，此时人体阳气处于潜藏状态，气血相对收敛。情绪调节上，要避免情绪低落、焦虑等不良情绪。可通过听舒缓音乐、阅读书籍、与亲友相聚等方式放松身心，缓解压力，保持积极乐观。冬季日照短，易引发季节性情绪失调，多晒太阳有助于促进维生素 D 合成，改善情绪。</p>
+                        <p>饮食方面，宜多摄入温热、滋补食物。羊肉性温，能温中健脾、补肾壮阳、益气养血，是大寒时节的滋补佳品，煮成羊肉汤，热气腾腾，既能暖身，又能滋补；牛肉可补脾胃、益气血、强筋骨；核桃补肾固精、润肠通便；栗子健脾养胃、补肾强筋；红枣补中益气、养血安神；桂圆补益心脾、养血安神；黑芝麻补肝肾、益精血。同时，要多吃滋阴润燥食物，如百合、银耳、雪梨、莲藕、蜂蜜等，缓解冬季干燥。减少辛辣、油腻、生冷食物摄入，以免加重肠胃负担。冬季气候干燥，人体易缺水，每天应适量饮用温水、淡茶，保证身体水分需求。</p>
+                        <p>起居上，要早睡晚起，保证充足睡眠，顺应阳气潜藏。早睡让身体充分休息，晚起有助于阳气升发。随着气温降低，及时增添衣物，尤其注意头部、颈部、脚部保暖，这些部位是人体阳气易散失之处。选择保暖性好、透气性强的棉衣、羽绒服、毛衣等。冬季室内外温差大，进出房间注意增减衣物，防止冷热交替引发疾病。此外，室内空气易干燥，可使用加湿器增加湿度，保持呼吸道湿润，同时经常开窗通风，保持空气清新，预防疾病传播。</p>
+                    </div>
+
+                    <!-- 节气食谱 -->
+                    <div class="section">
+                        <h2>节气食谱</h2>
+                        <div class="xs">
+                            <h3>- 酸菜炖豆腐</h3>
+                            <div class="kp">
+                                <div>
+                                    <img src="pic/sw/酸菜炖豆腐.jpg" />
+                                </div>
+                                <div class="right">
+                                    <h3>材料</h3>
+                                    <p>酸菜 200 克，豆腐 200 克，五花肉 100 克，葱姜适量。五花肉切片煸炒，加入酸菜炒香，再放入豆腐和葱姜一起炖煮。</p>
+                                    <h3>功效</h3>
+                                    <p>可开胃消食、补肾健脾、清热解毒。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xs">
+                            <h3>- 肉桂牛肉汤</h3>
+                            <div class="kp">
+                                <div>
+                                    <img src="pic/sw/肉桂牛肉汤.jpg" />
+                                </div>
+                                <div class="right">
+                                    <h3>材料</h3>
+                                    <p>肉桂 10 克，牛肉 500 克，葱姜适量。牛肉切块焯水，与肉桂、葱姜一起放入锅中煮汤。</p>
+                                    <h3>功效</h3>
+                                    <p>可温中散寒、补肾壮阳、益气养血，帮助身体抵御大寒的寒冷。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 节气饮茶 -->
+                    <div class="section">
+                        <h2>节气饮茶 - 康砖</h2>
+                        <div class="kp">
+                            <div>
+                                <img src="pic/cha/康砖.jpg" />
+                            </div>
+                            <div class="right jz">
+                                <p>在寒冷的冬季，康砖这种经过蒸压而成的砖形茶最适宜不过了。康砖适宜煮饮，其有助于消化吸收和补充维生素、微量元素。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 节气习俗 -->
+                    <div class="section">
+                        <h2>节气习俗</h2>
+                        <!-- 习俗1 -->
+                        <div class="xs">
+                            <h3>- 尾牙祭</h3>
+                            <div class="kp">
+                                <div>
+                                    <img src="pic/xs/尾牙祭.jpg" />
+                                </div>
+                                <div class="right jz">
+                                    <p>尾牙源自拜土地公做 “牙” 的习俗。二月二为头牙，此后每逢初二和十六都要做 “牙”，大寒所在的农历十二月十六便是尾牙。过去，做生意的人会在这天设宴请客，答谢员工一年的辛劳，白斩鸡是餐桌上必不可少的菜肴。如今，尾牙祭在多数地方已逐渐淡化，仅福建沿海、台湾等地还保留着这一传统 。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 习俗2 -->
+                        <div class="xs">
+                            <h3>- 吃消寒糕</h3>
+                            <div class="kp">
+                                <div>
+                                    <img src="pic/xs/吃消寒糕.jpg" />
+                                </div>
+                                <div class="right jz">
+                                    <p>在北京等地，大寒有吃消寒糕的习俗。消寒糕多用糯米制成，含糖量比大米高，食用后全身暖和，有温散风寒、润肺健脾的功效。而且，“糕” 与 “高” 谐音，大寒吃糕，寓意 “年高”，饱含着吉祥如意、年年平安、步步高升的美好期许 。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 习俗3 -->
+                        <div class="xs">
+                            <h3>- 赶集备年货</h3>
+                            <div class="kp">
+                                <div>
+                                    <img src="pic/xs/吃消寒糕.jpg" />
+                                </div>
+                                <div class="right jz">
+                                    <p>大寒临近春节，年味愈发浓郁。人们纷纷前往集市，采购年货。集市上热闹非凡，春联、年画、糖果、坚果等各类年货琳琅满目。一家人穿梭其中，欢声笑语，精心挑选心仪物品，为新年的到来做足准备 。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer">
+                <div class="allcenter">
+                    <ul class="infolist">
+                        <li>
+                            <h3><span>关注我们</span></h3>
+                            <ul class="ewmlist">
+                                <li data-qr="微信2.jpg">
+                                    <img src="../img/weixin.png" />
+                                    <span>微信</span>
+                                </li>
+                                <li data-qr="QQ2.jpg">
+                                    <img src="../img/qq.png" />
+                                    <span>QQ</span>
+                                </li>
+                                <li data-qr="bilibili2.jpg">
+                                    <img src="../img/bilibili.png" />
+                                    <span>bilibili</span>
+                                </li>
+                                <li data-qr="抖音2.jpg">
+                                    <img src="../img/douyin.png" />
+                                    <span>抖音</span>
+                                </li>
+                                <li data-qr="微博2.jpg">
+                                    <img src="../img/weibo.png" />
+                                    <span>微博</span>
+                                </li>
+                                <li data-qr="#">
+                                    <img src="../img/youxiang.png" />
+                                    <span>邮箱</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3><span>友情链接</span></h3>
+                            <p><a class="intlink-foot" href="https://www.nmtcm.cn/">国家中医药博物馆</a></p>
+                            <p><a class="intlink-foot" href="http://www.zgnybwg.com.cn/twenty/zh/four_solar_terms.html">中国农业博物馆</a></p>
+                            <p><a class="intlink-foot" href="https://www.solarterm.cn/list-24.html">二十四节气网-健康养生</a></p>
+                            <p><a class="intlink-foot" href="http://tcm166.com/tcm/ys/jq/">国医在线</a></p>
+                        </li>
+                        <li>
+                            <h3><span>版权所有</span></h3>
+                            <p>©湖北中医药大学</p>
+                            <br />
+                            <p>地址：武汉市洪山区黄家湖西路16号</p>
+                            <br />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <script src="../../JS/footer.js"></script>
+        </div>
+    </form>
+</body>
+</html>

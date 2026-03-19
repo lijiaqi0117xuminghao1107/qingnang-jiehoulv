@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平分春色，共赴蓬勃之约</title>
+    <link rel="stylesheet" type="text/css" href="../../CSS/header.css" />
+    <link rel="stylesheet" type="text/css" href="../../CSS/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../../CSS/24.css" />
+    <style>
+        body {
+            background-image: url("pic/春.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .section p {
+            color: rgb(225, 141, 172);
+        }
+
+        .section h2 {
+            color: rgb(225, 141, 172);
+        }
+
+        .section h3 {
+            color: rgb(225, 141, 172);
+        }
+
+        .top-img {
+            width: 100%;
+            height: 700px;
+            box-shadow: 20px 30px 20px rgba(0,0,0,0.25);
+        }
+
+            .top-img img {
+                width: 100%;
+                height: 100%;
+            }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div class="nav-container">
+                <input type="checkbox" name="" id="check" />
+                <div class="logo-container">
+                    <h3 class="logo">青囊节候录</h3>
+                </div>
+
+                <div class="nav-btn">
+                    <div class="nav-links">
+                        <ul>
+                            <li class="nav-link" style="--i: .6s">
+                                <a href="../index.html">主页</a>
+                            </li>
+                            <li class="nav-link" style="--i: .85s">
+                                <a href="../二十四节气总览.html">节气</a>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li class="dropdown-link">
+                                            <a href="#">春</a>
+                                            <div class="dropdown second">
+                                                <ul>
+                                                    <li class="dropdown-link">
+                                                        <a href="立春.html">立春</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="雨水.html">雨水</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="惊蛰.html">惊蛰</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="春分.html">春分</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="清明.html">清明</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="谷雨.html">谷雨</a>
+                                                    </li>
+                                                    <div class="arrow"></div>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown-link">
+                                            <a href="#">夏</a>
+                                            <div class="dropdown second">
+                                                <ul>
+                                                    <li class="dropdown-link">
+                                                        <a href="立夏.html">立夏</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="小满.html">小满</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="芒种.html">芒种</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="夏至.html">夏至</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="小暑.html">小暑</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="大暑.html">大暑</a>
+                                                    </li>
+                                                    <div class="arrow"></div>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown-link">
+                                            <a href="#">秋</a>
+                                            <div class="dropdown second">
+                                                <ul>
+                                                    <li class="dropdown-link">
+                                                        <a href="立秋.html">立秋</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="处暑.html">处暑</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="白露.html">白露</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="秋分.html">秋分</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="寒露.html">寒露</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="霜降.html">霜降</a>
+                                                    </li>
+                                                    <div class="arrow"></div>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown-link">
+                                            <a href="#">冬</a>
+                                            <div class="dropdown second">
+                                                <ul>
+                                                    <li class="dropdown-link">
+                                                        <a href="立冬.html">立冬</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="小雪.html">小雪</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="大雪.html">大雪</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="冬至.html">冬至</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="小寒.html">小寒</a>
+                                                    </li>
+                                                    <li class="dropdown-link">
+                                                        <a href="大寒.html">大寒</a>
+                                                    </li>
+                                                    <div class="arrow"></div>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <div class="arrow"></div>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-link" style="--i: 1.1s">
+                                <a href="../养生.html">养生</a>
+
+                            </li>
+                            <li class="nav-link" style="--i: 1.35s">
+                                <a href="../科普.html">科普</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="hamburger-menu-container">
+                    <div class="hamburger-menu">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="overlay"></div>
+            </section>
+        </main>
+        <div class="frame">
+            <div class="top-img">
+                <img src="pic/top/cf.jpg" />
+            </div>
+            <div class="content">
+                <div class="nr">
+                    <!-- 节气介绍 -->
+                    <div class="section">
+                        <h2>节气介绍</h2>
+                        <p>春分，作为二十四节气中的第四个节气，在每年公历 3 月 19 - 22 日交节。此时，太阳运行至黄经 0°，直射地球赤道，使得南北半球昼夜平分，各为 12 小时，呈现出 “春分秋分，昼夜平分” 的独特天象。“分者半也，此当九十日之半，故谓之分”，它不仅平分昼夜，更是将春季九十天均分为二，宣告春天已行至半途，万物即将迎来更加蓬勃的生长。</p>
+                        <p>春分时节，大自然宛如一幅徐徐展开的绮丽画卷。气温持续回升，我国除青藏高原、东北、西北和华北北部部分地区外，大部分区域都已步入明媚春天。杨柳依依，嫩绿的枝条在微风中轻舞；莺啼婉转，灵动的鸟儿穿梭于林间；田野里，小麦拔节生长，油菜花海金黄灿烂，桃花、李花、杏花等竞相绽放，将大地装点得五彩斑斓，处处洋溢着盎然生机。</p>
+                        <p>古人将春分细致划分为三候：“一候玄鸟至；二候雷乃发声；三候始电” 。一候时，玄鸟即燕子，感知到春的召唤，从南方长途跋涉归来，它们轻盈地掠过天空，停歇在屋檐下，为人间带来春的讯息；五日之后，进入二候，随着天气转暖，空气湿度增大，天空中开始响起阵阵雷声，那滚滚雷鸣打破了冬日的寂静，仿佛是大自然奏响的激昂乐章；再五日，三候至，闪电划破长空，与雷声相互呼应，为春日增添了几分灵动与神秘。与此同时，春分的花信依次为海棠、梨花、木兰。海棠花娇艳动人，似云霞般绚丽；梨花洁白如雪，素雅清新；木兰优雅高洁，傲立枝头。三种花卉接力绽放，将春日的浪漫氛围推向高潮。</p>
+                        <p>我国幅员辽阔，南北跨度近 50 个纬度，地形地貌丰富多样，导致春分时节各地景象差异显著。在岭南地区，早已是繁花似锦、绿树成荫，人们身着轻薄衣物，漫步于街头巷尾，尽情享受温暖阳光与馥郁花香；而在北方，虽然冰雪已经消融，但寒意尚未完全散尽，树木刚刚抽出新芽，田野里的麦苗也才开始返青，不过春的气息已愈发浓郁，处处透露着蓬勃生长的希望。</p>
+                    </div>
+
+                    <!-- 养生介绍 -->
+                    <div class="section">
+                        <h2>养生介绍</h2>
+                        <p>中医理论中，肝主疏泄，喜条达而恶抑郁，与春季阳气升发的特性相契合。春分时节，人体阳气随着自然界阳气的升发而旺盛，此时若肝气不舒，容易引发情绪波动、烦躁易怒等问题，进而影响其他脏腑功能。因此，保持肝气舒畅条达至关重要。</p>
+                        <p>在情绪调节方面，应尽量保持心情愉悦、平和，避免情绪大起大落。可通过培养兴趣爱好，如绘画、书法、音乐、摄影等，陶冶情操，舒缓压力。多参与户外活动，与亲朋好友相聚交流，让身心在明媚春光中得到放松。也可选择在清晨或傍晚，到公园、郊外等环境优美之处散步，欣赏自然美景，呼吸新鲜空气，使心情更加舒畅。</p>
+                        <p>饮食上，遵循 “省酸增甘” 原则。春季肝气旺盛，酸味食物会使肝气更旺，克制脾胃，而甘味食物能滋养脾胃。可多食用红枣、山药、南瓜、小米、红薯、蜂蜜等甘味食物，增强脾胃功能。适当摄入具有辛温发散特性的食物，如韭菜、香椿、豆芽、香菜等，有助于阳气升发，但不宜过量，以免上火。多吃新鲜蔬菜和水果，补充维生素和矿物质，如菠菜、春笋、草莓、樱桃等。减少辛辣、油腻、生冷食物的摄取，避免加重脾胃负担。此外，还可根据个人体质选择一些养生茶饮，如玫瑰花茶可疏肝理气，枸杞茶能滋补肝肾，陈皮茶可健脾理气。</p>
+                        <p>起居方面，应早睡早起，保证充足睡眠，以顺应阳气升发。此时昼夜平分，可调整作息，晚上 10 - 11 点入睡，早上 6 - 7 点起床。随着气温回升，可适当增加户外活动时间，但早晚温差仍较大，要注意 “春捂”，不要过早减去厚衣物，尤其是老人和儿童，以防感冒。穿衣可选择上薄下厚，重点护住下肢和腹部，避免寒邪入侵。保持室内空气流通，经常开窗通风，降低细菌、病毒滋生的几率。</p>
+                    </div>
+
+                    <!-- 节气食谱 -->
+                    <div class="section">
+                        <h2>节气食谱</h2>
+                        <div class="xs">
+                            <h3>- 香椿拌豆腐</h3>
+                            <div class="kp">
+                                <div>
+                                    <img src="pic/sw/香椿拌豆腐.jpg" />
+                                </div>
+                                <div class="right">
+                                    <h3>材料</h3>
+                                    <p>香椿 100 克，豆腐 200 克，盐、香油、生抽适量。香椿洗净焯水切碎，豆腐切块，加入调料拌匀即可。</p>
+                                    <h3>功效</h3>
+                                    <p>能清热解毒、健脾利湿，顺应春分时节的气候特点。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xs">
+                            <h3>- 首乌红枣鸡蛋汤</h3>
+                            <div class="kp">
+                                <div>
+                                    <img src="pic/sw/首乌红枣鸡蛋汤.jpg" />
+                                </div>
+                                <div class="right">
+                                    <h3>材料</h3>
+                                    <p>何首乌 30 克，红枣 10 枚，鸡蛋 2 个。将何首乌、红枣洗净，鸡蛋煮熟去壳，一起放入锅中煮汤。</p>
+                                    <h3>功效</h3>
+                                    <p>有补肝肾、益气血的功效，可增强体质。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 节气饮茶 -->
+                    <div class="section">
+                        <h2>节气饮茶 - 陈年生普</h2>
+                        <div class="kp">
+                            <div>
+                                <img src="pic/cha/陈年生普.jpg" />
+                            </div>
+                            <div class="right jz">
+                                <p>依据道法自然的养生传统，人在春分时需保持阴阳平衡，而有年份的普洱生茶，经历时间沉淀，茶叶中的咖啡碱、茶多酚、儿茶素等得到充分转化，致使茶性温和，它消热止渴功效很好，适合大多数人饮用。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 节气习俗 -->
+                    <div class="section">
+                        <h2>节气习俗</h2>
+                        <!-- 习俗1 -->
+                        <div class="xs">
+                            <h3>- 立蛋</h3>
+                            <div class="kp">
+                                <div>
+                                    <img src="pic/xs/立蛋.jpg" />
+                                </div>
+                                <div class="right jz">
+                                    <p>“春分到，蛋儿俏” 。立蛋这一传统习俗据说起源于 4000 年前的中国，人们以此庆祝春天的来临。在春分这一天，选择一个新鲜鸡蛋，轻手轻脚地在桌子上尝试将其竖立起来。虽然看似简单，实则需要耐心与技巧，找到鸡蛋的重心是关键。如今，很多地方仍会举行立蛋比赛，吸引众多人参与，为春分增添了不少趣味。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 习俗2 -->
+                        <div class="xs">
+                            <h3>- 放风筝</h3>
+                            <div class="kp">
+                                <div>
+                                    <img src="pic/xs/放风筝.jpg" />
+                                </div>
+                                <div class="right jz">
+                                    <p>春分时节，惠风和畅，正是放风筝的绝佳时机。风筝种类繁多，有蝴蝶、燕子、老鹰等各种造型。人们来到郊外，迎着春风放飞风筝，不仅能享受户外活动的乐趣，还寓意着将烦恼与晦气一同放飞，祈愿新的一年顺遂如意。孩子们更是乐在其中，奔跑着、欢笑着，风筝在蓝天白云间翱翔，构成一幅生机勃勃的春日画卷。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 习俗3 -->
+                        <div class="xs">
+                            <h3>- 吃春菜</h3>
+                            <div class="kp">
+                                <div>
+                                    <img src="pic/xs/吃春菜.jpg" />
+                                </div>
+                                <div class="right jz">
+                                    <p>在南方一些地区，有 “春分吃春菜” 的习俗。春菜通常指的是野苋菜，也叫春碧蒿，其嫩绿的叶子细长。每到春分，人们会到田野中采摘春菜，回家后与鱼片一起 “滚汤”，名曰 “春汤” 。当地流传着 “春汤灌脏，洗涤肝肠。阖家老少，平安健康” 的顺口溜，寄托了人们对健康的美好祈愿。实际上，春菜富含多种维生素和矿物质，此时食用，也符合春季养生多吃新鲜时令蔬菜的理念 。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer">
+                <div class="allcenter">
+                    <ul class="infolist">
+                        <li>
+                            <h3><span>关注我们</span></h3>
+                            <ul class="ewmlist">
+                                <li data-qr="微信2.jpg">
+                                    <img src="../img/weixin.png" />
+                                    <span>微信</span>
+                                </li>
+                                <li data-qr="QQ2.jpg">
+                                    <img src="../img/qq.png" />
+                                    <span>QQ</span>
+                                </li>
+                                <li data-qr="bilibili2.jpg">
+                                    <img src="../img/bilibili.png" />
+                                    <span>bilibili</span>
+                                </li>
+                                <li data-qr="抖音2.jpg">
+                                    <img src="../img/douyin.png" />
+                                    <span>抖音</span>
+                                </li>
+                                <li data-qr="微博2.jpg">
+                                    <img src="../img/weibo.png" />
+                                    <span>微博</span>
+                                </li>
+                                <li data-qr="#">
+                                    <img src="../img/youxiang.png" />
+                                    <span>邮箱</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3><span>友情链接</span></h3>
+                            <p><a class="intlink-foot" href="https://www.nmtcm.cn/">国家中医药博物馆</a></p>
+                            <p><a class="intlink-foot" href="http://www.zgnybwg.com.cn/twenty/zh/four_solar_terms.html">中国农业博物馆</a></p>
+                            <p><a class="intlink-foot" href="https://www.solarterm.cn/list-24.html">二十四节气网-健康养生</a></p>
+                            <p><a class="intlink-foot" href="http://tcm166.com/tcm/ys/jq/">国医在线</a></p>
+                        </li>
+                        <li>
+                            <h3><span>版权所有</span></h3>
+                            <p>©湖北中医药大学</p>
+                            <br />
+                            <p>地址：武汉市洪山区黄家湖西路16号</p>
+                            <br />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <script src="../../JS/footer.js"></script>
+        </div>
+    </form>
+</body>
+</html>

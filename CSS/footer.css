@@ -1,0 +1,113 @@
+.footer {
+    background-image: url("../img/header_footer.jpg");
+    color: #fff;
+    border-color: #44311c;
+    padding: 50px 0;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    z-index: 1;
+}
+
+.allcenter {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.infolist {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 0px 0px 70px;
+}
+
+    .infolist li h3 {
+        width: 300px;
+        height: 30px;
+        margin-bottom: 22px;
+        font-size: 18px;
+    }
+
+        .infolist li h3 span {
+            padding-bottom: 8px;
+            border-bottom: 1px solid #d1d1d1;
+        }
+
+    .infolist img {
+        padding-right: 8px;
+        height: 30px;
+        vertical-align: middle;
+    }
+
+    .infolist li {
+        margin: 10px;
+        font-size: 12px;
+        flex: 0 0 25%;
+        cursor: pointer;
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+.ewmlist {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.infolist li p {
+    font-size: 15px;
+    width: 300px;
+    margin: 5px 0px;
+    text-align: center;
+}
+
+.infolist li h3 {
+    text-align: center;
+}
+
+.intlink-foot {
+    color: white;
+    text-align: center;
+}
+
+    .intlink-foot:hover {
+        color: antiquewhite;
+    }
+
+/* 新增的二维码样式 */
+.qr-code {
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    padding: 10px;
+    z-index: 10;
+}
+
+    .qr-code img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* 确保图片完全覆盖盒子，不拉伸变形 */
+    }
+
+.qr-code2 {
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    padding: 10px;
+    z-index: 10;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+}

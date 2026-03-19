@@ -1,0 +1,157 @@
+/* 整体节气速览板块容器样式 */
+.season-preview-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* 每个季节分区的样式 */
+.season-section {
+    margin-top: 30px;
+    /*border: 1px solid #ccc;*/
+    padding: 20px;
+    border-radius: 5px;
+    color: #472523;
+}
+
+    /* 季节标题样式 */
+    .season-section h2 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+/* 节气卡片容器样式 */
+.solar-term-cards {
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* 单个节气卡片样式 */
+.solar-term-card {
+    width: 150px;
+    height: 240px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* 添加transform的过渡效果 */
+    position: relative;
+}
+
+    .solar-term-card:hover {
+        background-color: #eaeaea;
+        transform: translateY(-5px); /* 鼠标悬停时，卡片向上移动5px */
+    }
+
+    .solar-term-card h3 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+/* 养生小贴士样式 */
+.health-tips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+    .health-tips li {
+        writing-mode: vertical-lr;
+        line-height: 1.7;
+        width: 150px;
+        height: 100px;
+    }
+
+    .health-tips spen {
+        font-size: 20px;
+        color: #b1543b;
+    }
+
+/*节气养生板块*/
+.solar-term-health-container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.solar-term-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px; /* 按钮之间的间距 */
+}
+
+    .solar-term-list span {
+        writing-mode: vertical-lr;
+        width: 20px;
+        padding: 10px 10px;
+    }
+
+.term-item {
+    width: 40px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color:#b1543b;
+    color:white;
+    transition: background-color 0.3s ease;
+}
+
+    .term-item:hover {
+        background-color: #fff;
+        color: rgb(85, 71, 59);
+    }
+
+.active {
+    background-color: #fff;
+    color: rgb(85, 71, 59);
+}
+
+.solar-term-details {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    height: 400px;
+}
+.hidden {
+    display: none;
+}
+
+.ys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ys-left {
+    height: 300px;
+    width: 300px;
+}
+
+    .ys-left img {
+        height: 300px;
+        width: 300px;
+    }
+
+.ys-right {
+    width: 700px;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+    .ys-right p {
+        margin: 20px 0 20px 20px;
+    }
+
+    .ys-right span {
+        color: #b1543b;
+    }
